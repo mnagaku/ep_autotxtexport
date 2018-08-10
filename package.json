@@ -1,0 +1,12 @@
+{
+	"name": "ep_autotxtexport",
+	"version": "0.1.0",
+	"description": "auto text export plugin for etherpad-lite",
+	"author": "mnagaku <mnagaku@gmail.com>",
+	"dependencies": {
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/mnagaku/ep_autotxtexport.git"
+        }
+    }
+}

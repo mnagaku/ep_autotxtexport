@@ -1,0 +1,10 @@
+{
+    "parts": [
+        {
+            "name": "ep_autotxtexport",
+            "hooks": {
+                "padUpdate" : "ep_autotxtexport/ep_autotxtexport:autotxtexport"
+            }
+        }
+    ]
+}
