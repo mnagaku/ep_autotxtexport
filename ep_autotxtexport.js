@@ -7,7 +7,7 @@ exports.mkdirtxtexport = function(hook_name, args, cb) {
     var s = fs.stat(txtexportdir, function (err) {
         if (err) {
             if (err.code === 'ENOENT') {
-                fs.mkdir(txtexportdir);
+                fs.mkdirSync(txtexportdir);
             }
             else {
                 console.error(err);
