@@ -7,7 +7,7 @@ exports.mkdirtxtexport = function(hook_name, args, cb) {
     var s = fs.stat(txtexportdir, function (err) {
         if (err) {
             if (err.code === 'ENOENT') {
-                fs.mkdirSync(txtexportdir);
+                fs.mkdir(txtexportdir);
             }
             else {
                 console.error(err);
@@ -19,5 +19,5 @@ exports.mkdirtxtexport = function(hook_name, args, cb) {
 
 exports.autotxtexport = function(hook_name, args, cb) {
     var txt = getPadPlainText(args.pad);
-    fs.writeFileSync(txtexportdir + "/" + args.pad.id + ".txt", txt);
+    fs.writeFile(txtexportdir + "/" + args.pad.id + ".txt", txt);
 }
