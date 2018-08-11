@@ -3,6 +3,7 @@
         {
             "name": "ep_autotxtexport",
             "hooks": {
+                "expressConfigure" : "ep_autotxtexport/ep_autotxtexport:mkdirtxtexport",
                 "padUpdate" : "ep_autotxtexport/ep_autotxtexport:autotxtexport"
             }
         }
