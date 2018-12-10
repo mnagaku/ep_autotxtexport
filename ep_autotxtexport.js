@@ -19,5 +19,5 @@ exports.mkdirtxtexport = function(hook_name, args, cb) {
 
 exports.autotxtexport = function(hook_name, args, cb) {
     var txt = getPadPlainText(args.pad);
-    fs.writeFileSync(txtexportdir + "/" + args.pad.id + ".txt", txt);
+    fs.writeFileSync(txtexportdir + "/" + args.pad.id + ".ks", txt);
 }
